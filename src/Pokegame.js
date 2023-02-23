@@ -12,6 +12,9 @@ const Pokegame = ({ pokemon }) => {
         hand2.push(randCard);
     }
 
+    console.log(hand1);
+    console.log(hand2);
+
     let hand1Exp = 0;
     let hand2Exp = 0;
 
