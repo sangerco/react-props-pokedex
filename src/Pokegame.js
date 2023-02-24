@@ -3,17 +3,16 @@ import Pokedex from './Pokedex';
 import './Pokegame.css';
 
 const Pokegame = ({ pokemon }) => {
-    let hand1 = pokemon;
+    let hand1 = [...pokemon];
     let hand2 = [];
 
     while (hand2.length < hand1.length) {
         let idx = Math.floor(Math.random() * hand1.length);
+        console.log(idx);
         let randCard = hand1.splice(idx, 1)[0];
+        console.log(randCard);
         hand2.push(randCard);
     }
-
-    console.log(hand1);
-    console.log(hand2);
 
     let hand1Exp = 0;
     let hand2Exp = 0;
